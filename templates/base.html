@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Sales Company{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!-- ...existing code... -->
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Sales Company</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/offers/">Offers</a>
+                <a href="/contact/">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <div id="cookie-consent" class="cookie-consent">
+        <span>We use cookies to improve your experience. By using our site, you accept cookies.</span>
+        <button onclick="acceptCookies()">Accept</button>
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Offers - Sales Company{% endblock %}
+{% block content %}
+<section class="offers-section">
+    <h2>Our Offers</h2>
+    <div class="offers-layout">
+        <div class="offers-list">
+            {% for offer in offers %}
+            <div class="offer-card">
+                <h3>{{ offer.title }}</h3>
+                <p>{{ offer.description }}</p>
+                <span class="price">{{ offer.price }}</span>
+                <button class="offer-btn">Learn More</button>
+            </div>
+            {% endfor %}
+        </div>
+        <aside class="offers-sidebar">
+            <h4>Why Choose Our Offers?</h4>
+            <ul>
+                <li>Competitive pricing</li>
+                <li>Customizable packages</li>
+                <li>Dedicated support</li>
+                <li>Proven results</li>
+            </ul>
+            <p>Contact us for a personalized quote or to discuss your business needs!</p>
+        </aside>
+    </div>
+</section>
+{% endblock %}
