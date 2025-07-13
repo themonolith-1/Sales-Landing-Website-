@@ -25,6 +25,24 @@
         <span>We use cookies to improve your experience. By using our site, you accept cookies.</span>
         <button onclick="acceptCookies()">Accept</button>
     </div>
+    <!-- Chatbot floating button and popup -->
+    <div id="chatbot-popup-btn" class="chatbot-popup-btn" title="Chat with us">
+        💬
+    </div>
+    <div id="chatbot-popup" class="chatbot-popup">
+        <div class="chatbot-popup-header">
+            <span>Chatbot Assistant</span>
+            <button id="chatbot-close-btn" class="chatbot-close-btn">&times;</button>
+        </div>
+        <div class="chatbot-container">
+            <div id="chat-window" class="chat-window"></div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off">
+                <button id="send-btn">Send</button>
+            </div>
+        </div>
+    </div>
     <script src="{{ url_for('static', filename='main.js') }}"></script>
+    <script src="{{ url_for('static', filename='chatbot.js') }}"></script>
 </body>
 </html>

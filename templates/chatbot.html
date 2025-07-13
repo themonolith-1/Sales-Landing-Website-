@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Chatbot Assistant - Sales Company{% endblock %}
+{% block content %}
+<section class="chatbot-section">
+    <h2>Chatbot Assistant</h2>
+    <div class="chatbot-container">
+        <div id="chat-window" class="chat-window"></div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Type your message..." autocomplete="off">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+</section>
+<script src="{{ url_for('static', filename='chatbot.js') }}"></script>
+{% endblock %}
