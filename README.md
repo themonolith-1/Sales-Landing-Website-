@@ -59,6 +59,7 @@ This is a modular, professional template website for a sales company, built with
 - **Offers:** Edit `data/offers.json` to change the offers displayed.
 - **Styling:** Modify `static/style.css` for custom styles.
 - **Templates:** Update HTML in `templates/` for content changes.
+- **Chatbot:** Add and modify responses within Chatbot.py
 
 ## License
 
