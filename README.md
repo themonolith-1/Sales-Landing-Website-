@@ -47,6 +47,7 @@ This is a modular, professional template website for a sales company, built with
 
 4. **Run the application:**
    ```
+   Open terminal and type:
    python app.py
    ```
 
