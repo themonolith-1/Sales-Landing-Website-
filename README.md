@@ -8,7 +8,7 @@ This is a modular, professional template website for a sales company, built with
 - **Offers Page** (data-driven)
 - **Professional Header**
 - **Cookie Consent Popup**
-- **Chatbot**
+- **Chatbot** (free for modification)
 
 ## Features
 
